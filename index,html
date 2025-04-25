@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>点击得分游戏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #game {
+            text-align: center;
+            padding: 20px;
+        }
+        #qr {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <h1>得分: <span id="score">0</span></h1>
+        <button onclick="addScore()">点击得分！</button>
+    </div>
+    <div id="qr">
+        <img src="game-qr.png" alt="分享二维码">
+    </div>
+
+    <script>
+        let score = 0;
+        function addScore() {
+            score++;
+            document.getElementById('score').textContent = score;
+        }
+    </script>
+</body>
+</html>
