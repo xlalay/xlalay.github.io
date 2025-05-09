@@ -32,4 +32,4 @@
 
 点击下面按钮或链接，即可在线体验：
 
-![开始游戏](https://xlalay.github.io/)
+https://xlalay.github.io/
